@@ -1,0 +1,4 @@
+[submodule "py-faster-rcnn"]
+	path = py-faster-rcnn
+	url = https://github.com/azadis/py-faster-rcnn
+	branch = lddp_modification
