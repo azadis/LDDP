@@ -8,7 +8,7 @@ This implementation is built based on [Faster R-CNN](https://github.com/rbgirshi
 For more information on LDDP, please refer to the [arxiv preprint](https://arxiv.org/pdf/1704.03533.pdf) which will be published at CVPR 2017. 
 
 ### License
-LDDP is released under the MIT License (refer to the LICENSE file for details).
+LDDP is licensed for open non-commercial distribution under the UC Regents license; see LICENSE. Its dependencies, such as Caffe and Faster R-CNN, are subject to their own respective licenses.
 
 ### Citing LDDP 
 If you find LDDP useful in your research, please cite:

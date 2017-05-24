@@ -2,8 +2,7 @@
 
 # --------------------------------------------------------
 # LDDP
-# Copyright (c) 2017 Microsoft
-# Licensed under The MIT License [see LICENSE for details]
+# Licensed under UC Berkeley's Standard Copyright [see LICENSE for details]
 # Written by Samaneh Azadi
 # --------------------------------------------------------
 
@@ -282,7 +281,7 @@ class DPP():
         """
         clip gradient above an specific threshold
         """
-        bottom_diff_1_y =  1 * self._loss_weight * dLoss_db1
+        bottom_diff_1_y =  0.1 * self._loss_weight * dLoss_db1
         max_relative_diff_1_y=np.max(np.max(np.abs(np.divide(bottom_diff_1_y,cls_score+0.000001))))
         MAX_RD_1 = 10
         if  max_relative_diff_1_y > MAX_RD_1:

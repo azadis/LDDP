@@ -2,8 +2,7 @@
 
 # --------------------------------------------------------
 # LDDP
-# Copyright (c) 2017 Microsoft
-# Licensed under The MIT License [see LICENSE for details]
+# Licensed under UC Berkeley's Standard Copyright [see LICENSE for details]
 # Written by Samaneh Azadi
 # --------------------------------------------------------
 
