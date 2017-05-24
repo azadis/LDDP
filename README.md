@@ -2,7 +2,8 @@
 
 By Samaneh Azadi, Jiashi Feng, Trevor Darrell at UC Berkeley.
 
-### Introduction: LDDP is proposed to predict a set of diverse and informative proposals with enriched representations which is able to augment object detection architectures. 
+### Introduction: 
+LDDP is proposed to predict a set of diverse and informative proposals with enriched representations which is able to augment object detection architectures. 
 LDDP considers both label-level contextual information and spatial layout relationships between object proposals without increasing the number of parameters of the network, and thus improves location and category specifications of final detected bounding boxes substantially during both training and inference schemes.
 This implementation is built based on [Faster R-CNN](https://github.com/rbgirshick/py-faster-rcnn) framework but can be modified for other detection architectures.
 For more information on LDDP, please refer to the [arxiv preprint](https://arxiv.org/pdf/1704.03533.pdf) which will be published at CVPR 2017. 
@@ -12,6 +13,7 @@ LDDP is licensed for open non-commercial distribution under the UC Regents licen
 
 ### Citing LDDP 
 If you find LDDP useful in your research, please cite:
+
 	@article{azadi2017learning,
 	  title={Learning Detection with Diverse Proposals},
 	  author={Azadi, Samaneh and Feng, Jiashi and Darrell, Trevor},
@@ -34,6 +36,7 @@ Requirements and installation instructions are similar to [Faster R-CNN](https:/
   USE_CUDNN := 1
   ```
   You can download my [Makefile.config](https://people.eecs.berkeley.edu/~sazadi/LDDP/Makefile.config) for reference.
+
 2. Python packages you might not have: `cython`, `python-opencv`, `easydict`
 
 ### Requirements: hardware
@@ -111,11 +114,9 @@ Pre-trained ImageNet models can be downloaded for the three networks described i
 cd $LDDP_ROOT/py-faster-rcnn
 ./data/scripts/fetch_imagenet_models.sh
 ```
-VGG16 comes from the [Caffe Model Zoo](https://github.com/BVLC/caffe/wiki/Model-Zoo), but is provided here for your convenience.
-ZF was trained at MSRA.
 
 ### Usage
-To train and test a LDDP end-to-end detection framework:
+To train and test the LDDP end-to-end detection framework:
 ```Shell
 cd $LDDP_ROOT/py-faster-rcnn
 ./experiments/scripts/LDDP_end2end.sh [GPU_ID] [NET] [--set ...]
